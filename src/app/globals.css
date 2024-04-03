@@ -2,28 +2,188 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: SpaceBold;
+  src: url(./assets/fonts/SpaceMono-Bold.ttf);
+}
+@font-face {
+  font-family: SpaceNormal;
+  src: url(./assets/fonts/SpaceMono-Regular.ttf);
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::placeholder{
+  color: #5e7a7d;
+  text-align: center;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #c5e4e7;
+}
+
+/* input{
+  border: 0px;
+}
+
+input:focus{
+  border: 1px solid #26c0ab;
+} */
+
+.spaceN{
+  font-family: SpaceNormal;
+}
+
+.spaceB{
+  font-family: SpaceBold;
+}
+
+.mainBox{
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 10px;
+  display: grid;
+}
+
+.inputTxt{
+  font-family: SpaceBold;
+  font-size: 24px;
+  text-align: end;
+  color: #00494d;
+}
+
+.labelTxt{
+  color: #5e7a7d;
+  font-family: SpaceBold;
+}
+
+.customInputTxt{
+  font-family: SpaceBold;
+  font-size: 24px;
+  color: #00494d;
+  text-align: end;
+  padding-right: 20px;
+}
+
+.billInput{
+  background-color: #F4FAFA;
+  background-image: url(./assets/images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 12px;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  padding-right: 20px;
+}
+
+.tipInput{
+  background-color: #F4FAFA;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.partyInput{
+  background-color: #F4FAFA;
+  background-image: url(./assets/images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 12px;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  padding-right: 20px;
+}
+
+.billInput:focus{
+  /* border: 3px solid #26c0ab !important; */
+  outline: 2px solid #26c0ab;
+}
+
+.tipInput:focus{
+  outline: 2px solid #26c0ab;
+}
+
+.partyInput:focus{
+  outline: 2px solid #26c0ab;
+}
+
+.calculation{
+  background-color: #00494d;
+  border-radius: 15px;
+}
+
+.subTxt{
+  color: #c5e4e7;
+}
+
+.btnSpace{
+  column-gap: 75px;
+  row-gap: 25px;
+}
+
+.btnDark{
+  background-color: #00494d;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  color: white;
+  font-size: 24px;
+  font-family: SpaceBold;
+}
+
+.btnDark:hover{
+  background-color: #95e8de;
+  color: #00494d;
+}
+
+.btnLight{
+  background-color: #26c0ab;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  color: #00494d;
+  font-size: 24px;
+  font-family: SpaceBold;
+}
+
+.btnLight:hover{
+  background-color: #00494d;
+  color: #FFFFFF;
+}
+
+.specialBtn{
+  background-color: #26c0ab;
+  border-radius: 5px;
+  height: 50px;
+  color: #00494d;
+  font-size: 20px;
+  font-family: SpaceBold;
+}
+
+.specialBtn:hover{
+  background-color: #95e8de;
+}
+
+.totalsTxt{
+  color: #26c0ab;
+  font-family: SpaceBold;
+  font-size: 36px;
+  text-align: end;
+}
+
+@media screen and (min-width: 1024px) {
+  .btnDark{
+    width: 130px;
+  }
+  .btnLight{
+    width: 130px;
+  }
+  .tipInput{
+    width: 130px;
+  }
 }
 
 @layer utilities {
