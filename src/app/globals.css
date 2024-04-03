@@ -155,7 +155,7 @@ input:focus{
 }
 
 .specialBtn{
-  background-color: #26c0ab;
+  background-color: #00656b;
   border-radius: 5px;
   height: 50px;
   color: #00494d;
@@ -174,15 +174,13 @@ input:focus{
   text-align: end;
 }
 
+.hideme{
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
-  .btnDark{
-    width: 130px;
-  }
-  .btnLight{
-    width: 130px;
-  }
-  .tipInput{
-    width: 130px;
+  .hideme{
+    display: block;
   }
 }
 
