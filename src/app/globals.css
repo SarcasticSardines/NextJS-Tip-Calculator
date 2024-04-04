@@ -110,6 +110,21 @@ input:focus{
   outline: 2px solid #26c0ab;
 }
 
+.evilPartyInput{
+  background-color: #F4FAFA;
+  background-image: url(./assets/images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 12px;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  padding-right: 20px;
+}
+
+.evilPartyInput:focus{
+  outline: 2px solid #cf4027;
+}
+
 .calculation{
   background-color: #00494d;
   border-radius: 15px;
@@ -150,8 +165,9 @@ input:focus{
 }
 
 .btnLight:hover{
-  background-color: #00494d;
-  color: #FFFFFF;
+  /* background-color: #00494d;
+  color: #FFFFFF; */
+  background-color: #95e8de;
 }
 
 .specialBtn{
@@ -165,6 +181,15 @@ input:focus{
 
 .specialBtn:hover{
   background-color: #95e8de;
+}
+
+.moreSpecialBtn{
+  background-color: #26c0ab;
+  border-radius: 5px;
+  height: 50px;
+  color: #00494d;
+  font-size: 20px;
+  font-family: SpaceBold;
 }
 
 .totalsTxt{
